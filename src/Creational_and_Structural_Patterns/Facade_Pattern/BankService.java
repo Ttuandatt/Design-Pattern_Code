@@ -1,4 +1,4 @@
-package Facade_Pattern;
+package Creational_and_Structural_Patterns.Facade_Pattern;
 
 import java.math.BigDecimal;
 import java.util.Hashtable;
@@ -16,13 +16,13 @@ public class BankService{
         IAccount newAccount = null;
         int accountNumber = ++accountCounter;
         switch (type) {
-            case "Facade_Pattern.Chequing":
+            case "Creational_and_Structural_Patterns.Facade_Pattern.Chequing":
                 newAccount = new Chequing(accountNumber, initAmount);
                 break;
-            case "Facade_Pattern.Saving":
+            case "Creational_and_Structural_Patterns.Facade_Pattern.Saving":
                 newAccount = new Saving(accountNumber, initAmount);
                 break;
-            case "Facade_Pattern.Investment":
+            case "Creational_and_Structural_Patterns.Facade_Pattern.Investment":
                 newAccount = new Investment(accountNumber, initAmount);
                 break;
             default:

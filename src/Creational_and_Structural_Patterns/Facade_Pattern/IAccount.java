@@ -1,4 +1,4 @@
-package Facade_Pattern;
+package Creational_and_Structural_Patterns.Facade_Pattern;
 
 import java.math.BigDecimal;
 

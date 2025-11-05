@@ -1,4 +1,4 @@
-package Singleton_Pattern;
+package Creational_and_Structural_Patterns.Singleton_Pattern;
 
 public class Singleton {
     private static Singleton uniqueInstance;

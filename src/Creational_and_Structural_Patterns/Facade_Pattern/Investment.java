@@ -1,13 +1,13 @@
-package Facade_Pattern;
+package Creational_and_Structural_Patterns.Facade_Pattern;
 
 import java.math.BigDecimal;
 
-public class Saving implements IAccount {
+public class Investment implements IAccount {
     private int accountNumber;
     private BigDecimal balance;
 
     // Constructor
-    public Saving(int accountNumber, BigDecimal initialBalance) {
+    public Investment(int accountNumber, BigDecimal initialBalance) {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
     }
@@ -32,13 +32,13 @@ public class Saving implements IAccount {
         if (balance.compareTo(amount) >= 0) {
             balance = balance.subtract(amount);
         } else {
-            throw new IllegalArgumentException("Insufficient funds in Facade_Pattern.Saving");
+            throw new IllegalArgumentException("Insufficient funds in Creational_and_Structural_Patterns.Facade_Pattern.Investment");
         }
     }
 
     @Override
     public void transfer(int account, BigDecimal amount) {
-        throw new UnsupportedOperationException("Use Facade_Pattern.BankService to transfer");
+        throw new UnsupportedOperationException("Use Creational_and_Structural_Patterns.Facade_Pattern.BankService to transfer");
     }
 
     @Override
