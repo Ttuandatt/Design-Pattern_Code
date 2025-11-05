@@ -20,5 +20,9 @@ public class main {
         // Redo last undone write (Ctrl+Y)
         manager.redo();
         editor.show();
+
+        // Undo last write (Ctrl+Z)
+        manager.undo();
+        editor.show();
     }
 }

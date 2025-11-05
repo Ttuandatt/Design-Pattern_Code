@@ -7,10 +7,6 @@ public class CommandManager {
     private Stack<Command> history = new Stack<>();
     private Stack<Command> redo = new Stack<>();
 
-    public CommandManager() {
-
-    }
-
     public void executeCommand(Command command) {
         command.execute();
         history.push(command);
